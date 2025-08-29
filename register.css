@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #bedaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.register-form-container {
+    background-color: white;
+    color: black;
+    width: 40%;
+    min-width: 120px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-type-text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.form-register-login {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form-register-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.form-register-login form input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-register-login form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+.form-register-login form button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #1877F2; /* Facebook blue */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.form-register-login p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.register-button-group {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  gap: 12px;              /* spacing between buttons */
+  margin-top: 10px;
+}
+
+.register-button-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;                  /* space between icon + text */
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+/* Facebook button */
+.facebook-btn {
+  background: #1877F2;
+  color: white;
+  border: none;
+}
+
+.facebook-btn img {
+  filter: brightness(0) invert(1); /* makes icon white */
+  width: 20px;
+  height: 20px;
+}
+
+.facebook-btn:hover {
+  background: #145dbf;
+  transform: scale(1.02);
+}
+
+/* Google button */
+.google-btn {
+    background: white;
+    color: #444;
+    border: 1px solid #ccc;
+}
+
+.google-btn:hover {
+    background: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.register-button-group img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .register-form-container {
+    width: 90%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .register-form-container {
+        width: 70%;
+        padding: 30px;
+    }
+
+}
