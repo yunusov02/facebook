@@ -1,0 +1,145 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.facebook-logo svg {
+    height: 40px;
+    fill: #1877f2;
+    stroke: #1877f2;
+}
+
+.facebook-search {
+    display: flex;
+    align-items: center;
+    background: #f0f2f5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: 280px;
+}
+
+.facebook-search i {
+    font-size: 16px;
+    color: #65676b;
+    margin-right: 8px;
+}
+
+.facebook-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    flex: 1;
+}
+
+.facebook-search input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 5px rgba(24, 119, 242, 0.3);
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 40px;
+    font-weight: bold;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    color: #65676b;
+}
+
+
+.section i {
+    font-size: 24px;
+}
+
+.section p {
+    display: none;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    background: #65676b;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.section p::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #65676b transparent;
+}
+
+.active-section {
+    color: #1877f2;
+    font-weight: bold;
+    border-bottom: 3px solid #1877f2;
+}
+
+.section:hover {
+    color: #1877f2;
+    cursor: pointer;
+    background-color: #f0f2f5;
+}
+
+.section:hover p {
+    display: block;
+    color: white;
+    background-color: #65676b;
+    font-size: 12px;
+}
+.sections.right {
+    gap: 10px;
+}
+
+.sections.right .section {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.2s ease;
+}
+
+.sections.right .section i {
+    font-size: 18px;
+    color: #050505;
+}
+
+.sections.right .section:hover {
+    background: #e4e6eb;
+    color: #1877f2;
+}
